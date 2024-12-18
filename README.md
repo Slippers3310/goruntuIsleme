@@ -18,8 +18,8 @@ Ayrıca, renk sabitleme algoritması (Gray World) uygulandı ve test seti üzeri
 
 ## Farklı Işık Manipülasyonları ile Test:
 #### Manipülasyon fonksiyonu
-def get_manipulated_images(images):
-  pass
+``def get_manipulated_images(images):
+  pass``
 kullanarak Farklı Işık Manipülasyonları ile test edildi.
 
 ## Çıkarım
