@@ -19,3 +19,6 @@ Ayrıca, renk sabitleme algoritması (Gray World) uygulandı ve test seti üzeri
 
 ## Çıkarım
 Modelin Doğruluğu: Eğitim süreci sonunda modelin doğruluğu arttı ve %60'lar seviyesine ulaştı.
+
+
+![image](https://github.com/user-attachments/assets/2fe5ac23-e9da-499d-8844-ca094b554120)
