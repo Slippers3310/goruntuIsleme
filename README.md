@@ -15,3 +15,7 @@ Görüntüler, hedef boyut olan 128x128'e yeniden boyutlandırıldı ve normaliz
 ## Manipülasyonlar
 Test verisi üzerinde çeşitli manipülasyonlar yapıldı (örneğin, parlaklık değişiklikleri). Bu manipülasyonlar, modelin doğruluğunu etkileyip etkilemediği konusunda test edildi.
 Ayrıca, renk sabitleme algoritması (Gray World) uygulandı ve test seti üzerinde doğruluk oranları tekrar hesaplandı.
+
+
+## Çıkarım
+Modelin Doğruluğu: Eğitim süreci sonunda modelin doğruluğu arttı ve %60'lar seviyesine ulaştı.
