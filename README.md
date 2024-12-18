@@ -32,3 +32,6 @@ Modelin Doğruluğu: Eğitim süreci sonunda modelin doğruluğu arttı ve %60'l
 Orijinal Test Seti Doğruluğu: 59.85%
 Manipüle Edilmiş Test Seti Doğruluğu: 9.13%
 Renk Sabitliği Uygulanmış Test Seti Doğruluğu: 9.13%
+
+## Authors
+* **İlayda Uçan ** - [Slippers3310](https://github.com/Slippers3310)
