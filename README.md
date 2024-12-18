@@ -1,0 +1,2 @@
+# goruntuIsleme
+Aygaz Görüntü İşleme
