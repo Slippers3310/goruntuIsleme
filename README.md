@@ -14,16 +14,14 @@ Görüntüler, hedef boyut olan 128x128'e yeniden boyutlandırıldı ve normaliz
 
 ## Veri Seti
 Bu listede, üzerinde işlem yapılacak olan 10 farklı hayvan sınıfı belirtilmiştir. Her bir sınıfın 650 örneği alınacaktır.
-``
 #### Veri seti klasörlerinin yolları
-source_dir = "/kaggle/input/animals-with-attributes-2/Animals_with_Attributes2/JPEGImages"
+``source_dir = "/kaggle/input/animals-with-attributes-2/Animals_with_Attributes2/JPEGImages"``
 #### Veri seti klasörünün yolu
-target_dir = "FilteredImages"  # Filtrelenmiş verilerin kaydedileceği yol
+``target_dir = "FilteredImages"  # Filtrelenmiş verilerin kaydedileceği yol``
 
 #### Kullanılacak sınıflar
-selected_classes = ["collie", "dolphin", "elephant", "fox", "moose", "rabbit", "sheep", "squirrel", "giant+panda", "polar+bear"]
-images_per_class = 650
-``
+``selected_classes = ["collie", "dolphin", "elephant", "fox", "moose", "rabbit", "sheep", "squirrel", "giant+panda", "polar+bear"]``
+``images_per_class = 650``
 
 
 ## Manipülasyonlar
