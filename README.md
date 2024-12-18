@@ -12,9 +12,18 @@ Bu projede, görüntü işleme ve derin öğrenme tekniklerini kullanarak, çeş
 Hayvan sınıflarından belirli bir alt küme seçildi. Toplamda 10 farklı sınıf ve her sınıf için 650 görüntü alındı.
 Görüntüler, hedef boyut olan 128x128'e yeniden boyutlandırıldı ve normalizasyon işlemi yapıldı.
 
-## Kullanılan Veri Seti
-https://drive.google.com/drive/folders/1FYvR3c99nxf0qH235gpyJW0UGPWpmr5U?usp=shar
-ing
+## Veri Seti
+Bu listede, üzerinde işlem yapılacak olan 10 farklı hayvan sınıfı belirtilmiştir. Her bir sınıfın 650 örneği alınacaktır.
+'''
+#### Veri seti klasörlerinin yolları
+source_dir = "/kaggle/input/animals-with-attributes-2/Animals_with_Attributes2/JPEGImages"  # Veri seti klasörünün yolu
+target_dir = "FilteredImages"  # Filtrelenmiş verilerin kaydedileceği yol
+
+#### Kullanılacak sınıflar
+selected_classes = ["collie", "dolphin", "elephant", "fox", "moose", "rabbit", "sheep", "squirrel", "giant+panda", "polar+bear"]
+images_per_class = 650
+'''
+
 
 ## Manipülasyonlar
 Test verisi üzerinde çeşitli manipülasyonlar yapıldı (örneğin, parlaklık değişiklikleri). Bu manipülasyonlar, modelin doğruluğunu etkileyip etkilemediği konusunda test edildi.
