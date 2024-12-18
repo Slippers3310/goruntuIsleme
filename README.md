@@ -12,6 +12,10 @@ Bu projede, görüntü işleme ve derin öğrenme tekniklerini kullanarak, çeş
 Hayvan sınıflarından belirli bir alt küme seçildi. Toplamda 10 farklı sınıf ve her sınıf için 650 görüntü alındı.
 Görüntüler, hedef boyut olan 128x128'e yeniden boyutlandırıldı ve normalizasyon işlemi yapıldı.
 
+## Kullanılan Veri Seti
+https://drive.google.com/drive/folders/1FYvR3c99nxf0qH235gpyJW0UGPWpmr5U?usp=shar
+ing
+
 ## Manipülasyonlar
 Test verisi üzerinde çeşitli manipülasyonlar yapıldı (örneğin, parlaklık değişiklikleri). Bu manipülasyonlar, modelin doğruluğunu etkileyip etkilemediği konusunda test edildi.
 Ayrıca, renk sabitleme algoritması (Gray World) uygulandı ve test seti üzerinde doğruluk oranları tekrar hesaplandı.
