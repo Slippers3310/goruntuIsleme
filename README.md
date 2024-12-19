@@ -1,4 +1,13 @@
 # Aygaz Görüntü İşleme Bootcamp 🎯
+## Authors
+* **İlayda Uçan ** - [Slippers3310](https://github.com/Slippers3310)
+
+## Lisans
+
+Bu proje, MIT Lisansı altında lisanslanmıştır. Lisans detayları için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+
+# Proje Adı
+Aygaz Görüntü İşleme Bootcamp
 📌 Projenin Amacı :
 Bu proje, hayvan sınıflandırması problemini çözmek için bir Convolutional Neural Network (CNN) modeli geliştirmeyi hedeflemektedir.
 **Görsel veri analizi ve işleme yeteneği yüksek olan bu model, farklı hayvan türlerini (örneğin, "fil", "tilki", "tavşan") tanımlayarak sınıflandırma yapar. **
@@ -174,13 +183,5 @@ Orijinal Test Seti Doğruluğu: 59.85%
 Manipüle Edilmiş Test Seti Doğruluğu: 9.13%
 Renk Sabitliği Uygulanmış Test Seti Doğruluğu: 9.13%
 
-## Authors
-* **İlayda Uçan ** - [Slippers3310](https://github.com/Slippers3310)
-* 
-# Proje Adı
-Aygaz Görüntü İşleme Bootcamp
 
-## Lisans
-
-Bu proje, MIT Lisansı altında lisanslanmıştır. Lisans detayları için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
