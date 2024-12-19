@@ -176,3 +176,11 @@ Renk Sabitliği Uygulanmış Test Seti Doğruluğu: 9.13%
 
 ## Authors
 * **İlayda Uçan ** - [Slippers3310](https://github.com/Slippers3310)
+* 
+# Proje Adı
+Aygaz Görüntü İşleme Bootcamp
+
+## Lisans
+
+Bu proje, MIT Lisansı altında lisanslanmıştır. Lisans detayları için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
+
