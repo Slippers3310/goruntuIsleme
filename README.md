@@ -19,15 +19,15 @@ Amacımız görüntü işlemeve derin öğrenme tekniklerini kullanarak :
 
 
 # 📚 **1- Gerekli Kütüphanelerin Yüklenmesi** 
-###    👉 os ve shutil: Dosya ve klasör yönetimi işlemlerini kolaylaştırmak için.
-###    👉 cv2 (OpenCV): Görüntü işleme, boyutlandırma ve analiz için.
-###    👉 numpy: Sayısal hesaplamalar, dizi işlemleri ve veri manipülasyonu için.
-###    👉 ImageDataGenerator: Görüntü veri artırma (data augmentation) ve ön işleme için.
-###    👉 train_test_split: Veriyi eğitim ve test setlerine ayırmak için.
-###    👉 Model, Dense, Flatten, Dropout, BatchNormalization: Derin öğrenme modellerini oluşturmak ve katman eklemek için Keras araçları.
-###    👉 matplotlib: Grafikler ve görsellerle sonuçları analiz etmek ve görselleştirmek için.
-###    👉 keras: Derin öğrenme modellerini oluşturmak ve eğitmek için genel işlevsellik sağlar.
-###    👉 models, layers: Keras ile model mimarileri ve özel katmanlar oluşturmak için.
+    👉 os ve shutil: Dosya ve klasör yönetimi işlemlerini kolaylaştırmak için.
+    👉 cv2 (OpenCV): Görüntü işleme, boyutlandırma ve analiz için.
+    👉 numpy: Sayısal hesaplamalar, dizi işlemleri ve veri manipülasyonu için.
+    👉 ImageDataGenerator: Görüntü veri artırma (data augmentation) ve ön işleme için.
+    👉 train_test_split: Veriyi eğitim ve test setlerine ayırmak için.
+    👉 Model, Dense, Flatten, Dropout, BatchNormalization: Derin öğrenme modellerini oluşturmak ve katman eklemek için Keras araçları.
+    👉 matplotlib: Grafikler ve görsellerle sonuçları analiz etmek ve görselleştirmek için.
+    👉 keras: Derin öğrenme modellerini oluşturmak ve eğitmek için genel işlevsellik sağlar.
+    👉 models, layers: Keras ile model mimarileri ve özel katmanlar oluşturmak için.
 
 
 # 🧑‍💻 2- Veri Setinin Hazırlanması :
@@ -43,10 +43,10 @@ Bu bölümde, modeliniz için verilerin uygun şekilde hazırlanması, filtrelen
 **Amaç: Veri setinden yalnızca belirli sınıflara ait görüntüler alınarak bu sınıflar için verinin dengelenmesi sağlanır.**
 
 ### **🌟 Önemli Adımlar:**
-##### Klasör Yolları: source_dir ve target_dir, verilerin bulunduğu klasörün yolu ve filtrelenmiş verilerin kaydedileceği yeni klasörün yolu.
-##### Sınıflar Seçimi: selected_classes ile kullanılacak 10 farklı sınıf seçilir. Bu, modelin sadece bu sınıflara odaklanmasını sağlar.
-##### Görüntü Sayısı Limiti: images_per_class = 650 ile her sınıf için maksimum 650 resim seçilir, böylece veri seti dengelenir.
-##### Veri Filtreleme: Her sınıf için, klasördeki resimler belirli bir sayıya kadar alınır (i >= images_per_class ile sınırlandırılır), ardından bu resimler target_dir altındaki uygun alt klasöre kopyalanır.
+ Klasör Yolları: source_dir ve target_dir, verilerin bulunduğu klasörün yolu ve filtrelenmiş verilerin kaydedileceği yeni klasörün yolu.
+ Sınıflar Seçimi: selected_classes ile kullanılacak 10 farklı sınıf seçilir. Bu, modelin sadece bu sınıflara odaklanmasını sağlar.
+ Görüntü Sayısı Limiti: images_per_class = 650 ile her sınıf için maksimum 650 resim seçilir, böylece veri seti dengelenir.
+ Veri Filtreleme: Her sınıf için, klasördeki resimler belirli bir sayıya kadar alınır (i >= images_per_class ile sınırlandırılır), ardından bu resimler target_dir altındaki uygun alt klasöre kopyalanır.
 
    ### 📝 Sonuç: "Veri seti hazırlandı ve dengelendi." mesajı, filtreleme işleminin başarıyla tamamlandığını gösteriyor.# 📏 2.2 - Boyutlandırma ve Normalizasyon
  **Tüm görseller aynı boyutta ve ölçeklendirilmiş şekilde işlendi.**
@@ -56,11 +56,10 @@ Bu bölümde, modeliniz için verilerin uygun şekilde hazırlanması, filtrelen
 
 # **📊  2.3 Veriyi Eğitim ve Test Seti Olarak Ayırma**
 
-#### 1️⃣ Etiket Kodlama 🏷️
-####    Önce etiketleri (y) sayısal değerlere dönüştürdük:
-
-##### 🔄 LabelEncoder: Her sınıfa bir numara atar. (Mesela: "Fil" = 0, "Tilki" = 1)
-##### 🧮 to_categorical: Bu numaraları one-hot formata dönüştürür. (Yani: [1, 0, 0] gibi vektörler)
+ 1️⃣ Etiket Kodlama 🏷️
+    Önce etiketleri (y) sayısal değerlere dönüştürdük:
+ 🔄 LabelEncoder: Her sınıfa bir numara atar. (Mesela: "Fil" = 0, "Tilki" = 1)
+ 🧮 to_categorical: Bu numaraları one-hot formata dönüştürür. (Yani: [1, 0, 0] gibi vektörler)
 
 
 **🎯 Verilerin %70’i eğitim setine, %30’u test setine ayrıldı.
@@ -82,10 +81,10 @@ Bu listede, üzerinde işlem yapılacak olan 10 farklı hayvan sınıfı belirti
 ``images_per_class = 650``
 # **🔄 3- Veri Setinin Ayrılması ve Veri Artırımı**
 
-####  Veri Artırma ve Eğitim:
 
-##### 📈 Daha Fazla Veri Simülasyonu: Döndürme, kaydırma, kırpma gibi tekniklerle veri artırma yapıldı.
-##### 🏋️ Eğitim ve doğrulama setleriyle modelin öğrenmesi sağlandı.
+  Veri Artırma ve Eğitim:
+ 📈 Daha Fazla Veri Simülasyonu: Döndürme, kaydırma, kırpma gibi tekniklerle veri artırma yapıldı.
+ 🏋️ Eğitim ve doğrulama setleriyle modelin öğrenmesi sağlandı.
 
 ## Manipülasyonlar
 Test verisi üzerinde çeşitli manipülasyonlar yapıldı (örneğin, parlaklık değişiklikleri). Bu manipülasyonlar, modelin doğruluğunu etkileyip etkilemediği konusunda test edildi.
@@ -93,22 +92,18 @@ Ayrıca, renk sabitleme algoritması (Gray World) uygulandı ve test seti üzeri
 # **💡 4- CNN Modelinin Oluşturulması ve Eğitilmesi**
 
 **🔍 Modelin Yapısı:**
-####     Input Layer (Giriş Katmanı): Modelin giriş şekli (128, 128, 3) olarak belirlenmiş, yani 128x128 boyutlarında ve 3 renk kanalına sahip (RGB) görüntüler kullanılacak.
-####     Conv2D: 32 adet 3x3 boyutunda konvolüsyonel filtre kullanılarak, görsellerin temel özellikleri çıkarılır.
-####     MaxPooling2D: 2x2 boyutunda havuzlama yapılır, bu işlem görselin boyutunu küçültür ve özelliklerin daha kompakt bir temsiline yardımcı olur.
-####     Flatten: Konvolüsyonel ve havuzlama katmanlarından çıkan veriyi bir vektöre dönüştürür.
-####     Dense (128): Tam bağlantılı katman, 128 nöron ile öğrenmeye devam eder.
-####     Dense (10): Çıktı katmanı, 10 sınıf için softmax aktivasyonu kullanarak her bir sınıfa ait olasılıkları hesaplar.
-
-
-
-
+     Input Layer (Giriş Katmanı): Modelin giriş şekli (128, 128, 3) olarak belirlenmiş, yani 128x128 boyutlarında ve 3 renk kanalına sahip (RGB) görüntüler kullanılacak.
+     Conv2D: 32 adet 3x3 boyutunda konvolüsyonel filtre kullanılarak, görsellerin temel özellikleri çıkarılır.
+     MaxPooling2D: 2x2 boyutunda havuzlama yapılır, bu işlem görselin boyutunu küçültür ve özelliklerin daha kompakt bir temsiline yardımcı olur.
+     Flatten: Konvolüsyonel ve havuzlama katmanlarından çıkan veriyi bir vektöre dönüştürür.
+     Dense (128): Tam bağlantılı katman, 128 nöron ile öğrenmeye devam eder.
+     Dense (10): Çıktı katmanı, 10 sınıf için softmax aktivasyonu kullanarak her bir sınıfa ait olasılıkları hesaplar.
 
 # ⚙️ Modeli Derleme:
 
 **Modelin eğitimi için optimizer, loss fonksiyonu ve metrikler belirlenir.**
 
-#### Burada kullanılan Adam optimizer, öğrenme oranı 0.001 ile ayarlanmış, modelin öğrenmesini hızlandırmak ve stabil tutmak için yaygın olarak tercih edilir. ``categorical_crossentropy``, çok sınıflı sınıflandırma problemleri için kayıp fonksiyonudur.
+ Burada kullanılan Adam optimizer, öğrenme oranı 0.001 ile ayarlanmış, modelin öğrenmesini hızlandırmak ve stabil tutmak için yaygın olarak tercih edilir. ``categorical_crossentropy``, çok sınıflı sınıflandırma problemleri için kayıp fonksiyonudur.
 # 🖼️5 -Model Performansını Görselleştirme
 
 Bu kod, modelin eğitim süreci boyunca elde ettiği doğruluk (accuracy) değerlerini görselleştirir. Eğitim ve doğrulama doğruluğunun değişimini grafikte göstererek modelin nasıl geliştiğini ve doğrulama setiyle nasıl performans gösterdiğini izlememizi sağlar.
@@ -124,17 +119,16 @@ Doğrulama doğruluğu, modelin eğitim verilerinin dışında ne kadar iyi gene
 🔑 İçgörü: Eğitim doğruluğu çok yüksek ancak doğrulama doğruluğu düşüyorsa, model overfitting (aşırı öğrenme) yapıyor olabilir. Grafik, bu tür durumların erken tespiti için yararlıdır.
 # 🎨**7- Manipüle Edilmiş Test Seti ile Modeli Test Etme**
 
-#### Bu adımda, daha önce ışık koşullarını manipüle ettiğimiz test seti kullanılarak modelin performansı yeniden değerlendirilmiştir. Manipülasyon, görsellerin parlaklık ve kontrast gibi özelliklerini değiştirerek, modelin değişen ışık koşullarına karşı ne kadar sağlam olduğunu ölçmek için yapıldı.
+ Bu adımda, daha önce ışık koşullarını manipüle ettiğimiz test seti kullanılarak modelin performansı yeniden değerlendirilmiştir. Manipülasyon, görsellerin parlaklık ve kontrast gibi özelliklerini değiştirerek, modelin değişen ışık koşullarına karşı ne kadar sağlam olduğunu ölçmek için yapıldı.
 
 
 ### 🔍 İşlem ve Sonuç:
 
-#####      Manipülasyon: Test setindeki her bir görselin parlaklık ve kontrast ayarları değiştirildi, böylece modelin görsellerdeki bu tür değişikliklere adaptasyon yeteneği test edildi.
-#### Manipülasyon fonksiyonu
+      Manipülasyon: Test setindeki her bir görselin parlaklık ve kontrast ayarları değiştirildi, böylece modelin görsellerdeki bu tür değişikliklere adaptasyon yeteneği test edildi.
 ``def get_manipulated_images(images):
   pass``
 kullanarak Farklı Işık Manipülasyonları ile test edildi.
-#####      Test: Manipüle edilmiş veri setiyle modelin doğruluk oranı değerlendirildi. Bu işlem, modelin çevresel faktörlerden nasıl etkilendiğini gözler önüne serer.
+      Test: Manipüle edilmiş veri setiyle modelin doğruluk oranı değerlendirildi. Bu işlem, modelin çevresel faktörlerden nasıl etkilendiğini gözler önüne serer.
 
 
 
@@ -149,12 +143,12 @@ kullanarak Farklı Işık Manipülasyonları ile test edildi.
 
 Bu aşamada, modelin farklı veri kümeleri üzerinde gösterdiği performanslar karşılaştırıldı:
 
-#### **Orijinal Test Seti**
+ **Orijinal Test Seti**
 - **Açıklama**: Model, herhangi bir manipülasyon yapılmadan, orijinal test verisi üzerinde değerlendirildi.
 - **Amaç**: Modelin temel doğruluğunu ölçmek.
 - **Sonuç**: Orijinal test seti doğruluğu: **59.85%**.
 
-#### **Manipüle Edilmiş Test Seti (Işık Koşulları Değişimi)**
+ **Manipüle Edilmiş Test Seti (Işık Koşulları Değişimi)**
 - **Açıklama**: Test verilerine ışık koşulları manipülasyonu uygulandı, örneğin parlaklık ve kontrast değiştirildi.
 - **Amaç**: Modelin manipülasyonlara karşı dayanıklılığını test etmek.
 - **Sonuç**: Manipüle edilmiş test seti doğruluğu: **9.13%**.
@@ -170,7 +164,7 @@ Modelin Doğruluğu: Eğitim süreci sonunda modelin doğruluğu arttı ve %60'l
 
 # 📌 **Model Test Edilmesi:**
 
-####  ** Sonuçlar**:
+  ** Sonuçlar**:
 - **Gözlemler**: Orijinal test seti ile manipüle edilmiş test seti arasında doğrulukta büyük bir düşüş gözlemlendi.
 - **İyileştirme**: Renk sabitliği uygulanması, doğruluk oranını iyileştirmedi. Manipülasyon sonrası performans düşük kaldı.
 - **Genel Yorum**: Modelin, özellikle ışık koşullarındaki değişikliklere karşı çok duyarlı olduğu, ancak renk sabitliği gibi düzenlemelerin doğruluğu artırmak için yeterli olmadığı söylenebilir.
@@ -178,7 +172,7 @@ Modelin Doğruluğu: Eğitim süreci sonunda modelin doğruluğu arttı ve %60'l
 Bu analiz, modelin çevresel faktörlere karşı ne kadar duyarlı olduğunu ve manipülasyonlara karşı nasıl performans gösterdiğini ortaya koymaktadır.
 ![image](https://github.com/user-attachments/assets/2fe5ac23-e9da-499d-8844-ca094b554120)
 
-### Sonuç
+## Sonuç
 Orijinal Test Seti Doğruluğu: 59.85%
 Manipüle Edilmiş Test Seti Doğruluğu: 9.13%
 Renk Sabitliği Uygulanmış Test Seti Doğruluğu: 9.13%
