@@ -6,15 +6,16 @@
 
 Bu proje, MIT Lisansı altında lisanslanmıştır. Lisans detayları için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
-# Proje Adı - Aygaz Görüntü İşleme Bootcamp
-📌 Projenin Amacı :
-Bu proje, hayvan sınıflandırması problemini çözmek için bir Convolutional Neural Network (CNN) modeli geliştirmeyi hedeflemektedir.
-**Görsel veri analizi ve işleme yeteneği yüksek olan bu model, farklı hayvan türlerini (örneğin, "fil", "tilki", "tavşan") tanımlayarak sınıflandırma yapar. **
+Aygaz Görüntü İşleme Bootcamp :direct_hit:
+:push_pin: Projenin Amacı:
 
+- Bu proje, hayvan sınıflandırması problemini çözmek için bir Convolutional Neural Network (CNN) modeli geliştirmeyi hedeflemektedir.
+- Görsel veri analizi ve işleme yeteneği yüksek olan bu model, farklı hayvan türlerini (örneğin, "fil", "tilki", "tavşan") tanımlayarak sınıflandırma yapar. **
 Amacımız görüntü işlemeve derin öğrenme tekniklerini kullanarak :
-🖼️ Görsel verilerden anlamlı özellikler çıkarmak,
-🤖 Modeli genelleme yeteneği yüksek bir sınıflandırıcı olarak eğitmek,
-🌍 Gerçek dünyadaki veri manipülasyonu ve varyasyonlarına dayanıklı bir model geliştirmektir.
+
+:picture: Görsel verilerden anlamlı özellikler çıkarmak,
+:robot: Modeli genelleme yeteneği yüksek bir sınıflandırıcı olarak eğitmek,
+:earth_africa: Gerçek dünyadaki veri manipülasyonu ve varyasyonlarına dayanıklı bir model geliştirmektir.
 
 
 # 📚 **1- Gerekli Kütüphanelerin Yüklenmesi** 
